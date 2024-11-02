@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="tr">
 
@@ -36,7 +37,7 @@
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+    <!-- <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
 
@@ -45,9 +46,9 @@
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Om Kharche">Om Kharche</h1>
+          <h1 class="name" title="Om Kharche">Eymen Yıldız</h1>
 
-          <p class="title">Full Stack Developer</p>
+          <p class="title">Öğrenci</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -73,7 +74,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:omtestmail@gmail.com" class="contact-link">omtestmail@gmail.com</a>
+              <a href="mailto:eymenyildiz2008@gmail.com" class="contact-link">eymenyildiz2008@gmail.com</a>
             </div>
 
           </li>
@@ -87,7 +88,7 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" class="contact-link">+91 935960743</a>
+              <a href="tel:+905466346347" class="contact-link">+90 5466346347</a>
             </div>
 
           </li>
@@ -101,7 +102,7 @@
             <div class="contact-info">
               <p class="contact-title">Birthday</p>
 
-              <time datetime="1982-06-23">2 March, 2003</time>
+              <time datetime="1982-06-23">3 Temmuz, 2008</time>
             </div>
 
           </li>
@@ -115,7 +116,7 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Pune, India</address>
+              <address>Konya / Turkiye</address>
             </div>
 
           </li>
@@ -148,9 +149,9 @@
 
       </div>
 
-    </aside>
+    </aside> -->
 
-
+    {% include 'sidebar.html' %}
 
 
 
@@ -164,14 +165,14 @@
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+      <!-- <nav class="navbar">
 
         <ul class="navbar-list">
 
           <li class="navbar-item">
             <button class="navbar-link  active" data-nav-link>About</button>
           </li>
-
+          
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Resume</button>
           </li>
@@ -185,13 +186,13 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" onclick="windows.location.href='/contact'">Contact</button>
           </li>
 
         </ul>
 
-      </nav>
-
+      </nav> -->
+      {% include "navbar.html" %}
 
 
 
@@ -208,17 +209,12 @@
 
         <section class="about-text">
           <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+            Konya Osman Nuri Hekimoğlu Anadolu Lisesi'nde okuyorum. Yaklaşık 2 yıldır siber güvenlik ve yazılım ile ilgileniyorum.
+            Python, javascript, kotlin, java gibi dillerde projelerle kendimi geliştirmeye devam ediyorum.
           </p>
 
           <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+            Yaşımdan dolayı herhangi bir iş tecrübem olmasa da hem projeler geliştirerek hem CTF ler çözerek kendimi ileriki zamana hazırlamaya çalışıyorum.
           </p>
         </section>
 
@@ -307,103 +303,7 @@
           - testimonials
         -->
 
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="{% static 'images/avatar-1.png' %}" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Rohit Patil</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="{% static 'images/avatar-2.png" alt="Jessica miller" width="60' %}" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Dipti Sinha</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="{% static 'images/avatar-3.png' %}" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="{% static 'images/avatar-4.png' %}" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
+        
 
 
         <!--
@@ -457,7 +357,7 @@
 
         <section class="clients">
 
-          <h3 class="h3 clients-title">Clients</h3>
+          <!-- <h3 class="h3 clients-title">Clients</h3>
 
           <ul class="clients-list has-scrollbar">
 
@@ -497,7 +397,7 @@
               </a>
             </li>
 
-          </ul>
+          </ul> -->
 
         </section>
 
@@ -1185,6 +1085,8 @@
   <!--
     - ionicon link
   -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
